@@ -40,12 +40,14 @@ The third try, I used 3 hidden layers & an outer layer. Layer 1 had 30 neurons a
 
 `Were you able to achieve the target model performance?`
 
-The best accuracy I could achieve was 0.7286, or 72.9% accurate.
+The best accuracy I could achieve was 0.7260642, or 72.6% accurate.
 
 `What steps did you take in your attempts to increase model performance?`
 
-textext
+- Cleaned the data by removing any none features or targets
+- Split the deep neural network, i.e. tried to make use of split learning
+- Tried different numbers of layers, activations, optimizers and epochs
 
 ## **Q3 - Summary:** `Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.`
 
-textext
+Sadly, the difference between all three attempts was not significant— they all fell around 72% accurate, which was below the target accuracy. One way to make it more accurate would be to add more layers and hundreds of neurons, but without a more powerful computer, this was too difficult for my own computer to run, and so I had to keep it to a smaller size. I did make a small observation that sigmoid activation seemed to be the best for this, but upon further research, it seems that using sigmoid as the activation function isn't ideal in most cases as they make the model more suspectible to problems during training.
